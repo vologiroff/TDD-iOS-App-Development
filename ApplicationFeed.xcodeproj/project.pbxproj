@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB0E3DF2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0E3DE2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CBD9AF5F2AD9FD9500ECCC91 /* ApplicationFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = CBD9AF5E2AD9FD9500ECCC91 /* ApplicationFeed.docc */; };
 		CBD9AF652AD9FD9500ECCC91 /* ApplicationFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD9AF5A2AD9FD9500ECCC91 /* ApplicationFeed.framework */; };
 		CBD9AF6B2AD9FD9500ECCC91 /* ApplicationFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD9AF5D2AD9FD9500ECCC91 /* ApplicationFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBB0E3DE2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		CBD9AF5A2AD9FD9500ECCC91 /* ApplicationFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApplicationFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9AF5D2AD9FD9500ECCC91 /* ApplicationFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationFeed.h; sourceTree = "<group>"; };
 		CBD9AF5E2AD9FD9500ECCC91 /* ApplicationFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ApplicationFeed.docc; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBB0E3DD2AE45F5C0064DBB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CBB0E3DE2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CBD9AF502AD9FD9500ECCC91 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		CBDD842D2ADC67D900E20A5B /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
+				CBB0E3DD2AE45F5C0064DBB1 /* Helpers */,
 				CBDD84202ADA029000E20A5B /* RemoteFeedLoaderTests.swift */,
 				CBDD84302ADCB3E500E20A5B /* URLSessionHTTPClientTests.swift */,
 			);
@@ -251,6 +262,7 @@
 			files = (
 				CBDD84212ADA029000E20A5B /* RemoteFeedLoaderTests.swift in Sources */,
 				CBDD84312ADCB3E500E20A5B /* URLSessionHTTPClientTests.swift in Sources */,
+				CBB0E3DF2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
