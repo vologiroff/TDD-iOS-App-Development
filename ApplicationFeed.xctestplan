@@ -9,7 +9,15 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ApplicationFeed.xcodeproj",
+          "identifier" : "CBD9AF592AD9FD9500ECCC91",
+          "name" : "ApplicationFeed"
+        }
+      ]
+    },
     "testExecutionOrdering" : "random"
   },
   "testTargets" : [
