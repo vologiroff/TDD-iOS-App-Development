@@ -1,0 +1,26 @@
+{
+  "configurations" : [
+    {
+      "id" : "A616776A-53D3-4DCB-9955-C3B311F53115",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CBD9AF632AD9FD9500ECCC91",
+        "name" : "ApplicationFeedTests"
+      }
+    }
+  ],
+  "version" : 1
+}
