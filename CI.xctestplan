@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "A616776A-53D3-4DCB-9955-C3B311F53115",
-      "name" : "Test Scheme Action",
+      "id" : "1EE3BD20-528A-44B0-B8A0-6E0D8EDFC373",
+      "name" : "Configuration 1",
       "options" : {
 
       }
@@ -21,6 +21,14 @@
     "testExecutionOrdering" : "random"
   },
   "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CBB0E3E62AE5EE900064DBB1",
+        "name" : "ApplicationFeedAPIEndToEndTests"
+      }
+    },
     {
       "parallelizable" : true,
       "target" : {
