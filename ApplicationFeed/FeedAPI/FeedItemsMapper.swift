@@ -26,7 +26,7 @@ internal final class FeedItemsMapper {
             return FeedItem(id: id,
                             description: description,
                             location: location,
-                            imageUrl: image)
+                            imageURL: image)
         }
     }
     
