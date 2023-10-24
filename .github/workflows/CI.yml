@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-and-test:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_15.0.1.app
+
+    - name: Build and test
+      run: xcodebuild clean build test -project ApplicationFeed/ApplicationFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGHNING_REQUIRED=NO
