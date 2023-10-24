@@ -1,4 +1,4 @@
-# ``ApplicationFeed``
+# ApplicationFeed
 
 ## Image Feed Feature Specs
 
