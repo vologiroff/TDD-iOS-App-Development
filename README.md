@@ -1,5 +1,7 @@
 # ApplicationFeed
 
+[![CI](https://github.com/vologiroff/ApplicationFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/vologiroff/ApplicationFeed/actions/workflows/CI.yml)
+
 ## Image Feed Feature Specs
 
 ### Story: Customer requests to see their image feed
