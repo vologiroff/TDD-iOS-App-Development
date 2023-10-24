@@ -60,6 +60,7 @@
 		CBEB52162AE5FA5E00E4111D /* ApplicationFeedAPIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApplicationFeedAPIEndToEndTests.xctestplan; sourceTree = "<group>"; };
 		CBEB52172AE5FA8E00E4111D /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 		CBEB52182AE7534E00E4111D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBEB52192AE8813400E4111D /* ApplicationFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = ApplicationFeed.xctestplan; path = ../ApplicationFeed.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CBEB52182AE7534E00E4111D /* README.md */,
+				CBEB52192AE8813400E4111D /* ApplicationFeed.xctestplan */,
 				CBEB52172AE5FA8E00E4111D /* CI.xctestplan */,
 				CBEB52162AE5FA5E00E4111D /* ApplicationFeedAPIEndToEndTests.xctestplan */,
 				CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */,
