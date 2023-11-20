@@ -13,7 +13,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:ApplicationFeedAPIEndToEndTests.xctestplan"
+            reference = "container:ApplicationFeedCacheIntegrationTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -23,16 +23,11 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBB0E3E62AE5EE900064DBB1"
-               BuildableName = "ApplicationFeedAPIEndToEndTests.xctest"
-               BlueprintName = "ApplicationFeedAPIEndToEndTests"
+               BlueprintIdentifier = "CB7E97E92B0AEDA900CF676B"
+               BuildableName = "ApplicationFeedCacheIntegrationTests.xctest"
+               BlueprintName = "ApplicationFeedCacheIntegrationTests"
                ReferencedContainer = "container:ApplicationFeed.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ApplicationFeedAPIEndToEndTests/test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
