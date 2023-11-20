@@ -37,6 +37,14 @@
         "identifier" : "CBD9AF632AD9FD9500ECCC91",
         "name" : "ApplicationFeedTests"
       }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB7E97E92B0AEDA900CF676B",
+        "name" : "ApplicationFeedCacheIntegrationTests"
+      }
     }
   ],
   "version" : 1
