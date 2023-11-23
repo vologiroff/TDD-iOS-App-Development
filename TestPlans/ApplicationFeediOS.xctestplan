@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "17E7FD69-3B70-4259-AF19-3AA289A9936B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ApplicationFeed.xcodeproj",
+          "identifier" : "CB6535ED2B100C0600BEC240",
+          "name" : "ApplicationFeediOS"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB6535F42B100C0700BEC240",
+        "name" : "ApplicationFeediOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}
