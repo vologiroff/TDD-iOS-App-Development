@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "EA5EEC5E-4ABB-4354-AF35-94C97A7B44C3",
-      "name" : "Configuration 1",
+      "id" : "086DF06D-035F-4FE1-81A7-8D810B8A27D6",
+      "name" : "Test Scheme Action",
       "options" : {
 
       }
@@ -22,20 +22,11 @@
   },
   "testTargets" : [
     {
-      "enabled" : false,
       "parallelizable" : true,
       "target" : {
         "containerPath" : "container:ApplicationFeed.xcodeproj",
-        "identifier" : "CBB0E3E62AE5EE900064DBB1",
-        "name" : "ApplicationFeedAPIEndToEndTests"
-      }
-    },
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:ApplicationFeed.xcodeproj",
-        "identifier" : "CBD9AF632AD9FD9500ECCC91",
-        "name" : "ApplicationFeedTests"
+        "identifier" : "CB7E97E92B0AEDA900CF676B",
+        "name" : "ApplicationFeedCacheIntegrationTests"
       }
     }
   ],
