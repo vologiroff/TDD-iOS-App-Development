@@ -170,6 +170,17 @@
 			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
+		CB6535CE2B100A9B00BEC240 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A73CD2AEEA19B005B3C41 /* ApplicationFeed.xctestplan */,
+				CBEB52172AE5FA8E00E4111D /* CI.xctestplan */,
+				CBEB52162AE5FA5E00E4111D /* ApplicationFeedAPIEndToEndTests.xctestplan */,
+				CB7E97F42B0AEE6300CF676B /* ApplicationFeedCacheIntegrationTests.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
 		CB7A73CF2AEED60F005B3C41 /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,10 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				CBEB52182AE7534E00E4111D /* README.md */,
-				CB7A73CD2AEEA19B005B3C41 /* ApplicationFeed.xctestplan */,
-				CBEB52172AE5FA8E00E4111D /* CI.xctestplan */,
-				CBEB52162AE5FA5E00E4111D /* ApplicationFeedAPIEndToEndTests.xctestplan */,
-				CB7E97F42B0AEE6300CF676B /* ApplicationFeedCacheIntegrationTests.xctestplan */,
+				CB6535CE2B100A9B00BEC240 /* TestPlans */,
 				CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */,
 				CBD9AF682AD9FD9500ECCC91 /* ApplicationFeedTests */,
 				CBB0E3E82AE5EE900064DBB1 /* ApplicationFeedAPIEndToEndTests */,
