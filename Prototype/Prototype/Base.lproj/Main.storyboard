@@ -42,8 +42,8 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pw8-BU-v26" userLabel="Pin Container">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="14"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2QV-gd-oBn">
-                                                                    <rect key="frame" x="0.0" y="2.3333333333333321" width="16.333333333333332" height="19.666666666666668"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="2QV-gd-oBn">
+                                                                    <rect key="frame" x="0.0" y="2.0000000000000009" width="10" height="14.333333333333336"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -136,7 +136,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mappin" catalog="system" width="106" height="128"/>
+        <image name="pin" width="10" height="14.333333015441895"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
