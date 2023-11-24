@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests.swift
+//  ApplicationFeediOSTests.swift
 //  ApplicationFeediOSTests
 //
 //  Created by Kantemir Vologirov on 24.11.23..
@@ -19,10 +19,14 @@ final class FeedViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(load), for: .valueChanged)
         load()
+    }
+    
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        refreshControl?.beginRefreshing()
     }
     
     @objc private func load() {
@@ -30,10 +34,10 @@ final class FeedViewController: UITableViewController {
     }
 }
 
-final class FeedViewControllerTests: XCTestCase {
+final class ApplicationFeediOSTests: XCTestCase {
     
     func test_unit_doesNotLoadFeed() {
-        let (sut, loader) = makeSUT()
+        let (_, loader) = makeSUT()
         
         XCTAssertEqual(loader.loadCallCount, 0)
     }
@@ -56,6 +60,14 @@ final class FeedViewControllerTests: XCTestCase {
         sut.refreshControl?.simulatePullToRefresh()
         XCTAssertEqual(loader.loadCallCount, 3)
     }
+    
+    //TODO: - Fix iOS 17 (viewIsAppearing)
+//    func test_viewDidLoad_showsLoadingIndicator() {
+//        let (sut, _) = makeSUT()
+//        sut.loadViewIfNeeded()
+//
+//        XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+//    }
     
     //MARK: - Helpers
     
@@ -85,3 +97,4 @@ private extension UIRefreshControl {
         }
     }
 }
+
