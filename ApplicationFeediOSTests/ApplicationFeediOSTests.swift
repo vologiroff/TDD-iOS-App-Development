@@ -68,7 +68,7 @@ final class ApplicationFeediOSTests: XCTestCase {
     //        let (sut, _) = makeSUT()
     //        sut.loadViewIfNeeded()
     //
-    //        XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+    //        XCTAssertTrue(sut.isShowingLoadingIndicator)
     //    }
     
     func test_viewDidLoad_hidesLoadingIndicatorOnLoaderCompletion() {
@@ -77,7 +77,7 @@ final class ApplicationFeediOSTests: XCTestCase {
         sut.loadViewIfNeeded()
         loader.completeFeedLoading()
         
-        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
+        XCTAssertFalse(sut.isShowingLoadingIndicator)
     }
     
     //TODO: - Fix iOS 17 (viewIsAppearing)
@@ -86,7 +86,7 @@ final class ApplicationFeediOSTests: XCTestCase {
     //
     //        sut.simulateUserInitiatedFeedReload()
     //
-    //        XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+    //        XCTAssertTrue(sut.isShowingLoadingIndicator)
     //    }
     
     func test_userInitiatedFeedReload_hidesLoadingIndicatorOnLoaderCompletion() {
@@ -95,7 +95,7 @@ final class ApplicationFeediOSTests: XCTestCase {
         sut.simulateUserInitiatedFeedReload()
         loader.completeFeedLoading()
         
-        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
+        XCTAssertFalse(sut.isShowingLoadingIndicator)
     }
     
     //MARK: - Helpers
@@ -128,6 +128,10 @@ final class ApplicationFeediOSTests: XCTestCase {
 private extension FeedViewController {
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
+    }
+    
+    var isShowingLoadingIndicator: Bool {
+        return refreshControl?.isRefreshing == true
     }
 }
 
