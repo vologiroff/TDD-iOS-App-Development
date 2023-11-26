@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "A478756C-9EB0-4141-BF05-E1D1F268C6E5",
+      "name" : "Configuration 1",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ApplicationFeed.xcodeproj",
+          "identifier" : "CB6535ED2B100C0600BEC240",
+          "name" : "ApplicationFeediOS"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB6535F42B100C0700BEC240",
+        "name" : "ApplicationFeediOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}
