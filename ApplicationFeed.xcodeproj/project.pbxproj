@@ -60,6 +60,7 @@
 		CBFCB4E42B00360C0059B310 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFCB4E32B00360C0059B310 /* SharedTestHelpers.swift */; };
 		CBFD64EB2B1688F1003BCE1C /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EA2B1688F1003BCE1C /* FeedImageDataLoader.swift */; };
 		CBFD64ED2B168A5D003BCE1C /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */; };
+		CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,7 @@
 		CBFCB4E32B00360C0059B310 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		CBFD64EA2B1688F1003BCE1C /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
+		CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6536172B115FEF00BEC240 /* FeedViewControllerTests.swift */,
+				CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */,
 			);
 			path = ApplicationFeediOSTests;
 			sourceTree = "<group>";
@@ -717,6 +720,7 @@
 			files = (
 				CB6536182B115FEF00BEC240 /* FeedViewControllerTests.swift in Sources */,
 				CB65360D2B11468E00BEC240 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
