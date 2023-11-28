@@ -62,6 +62,7 @@
 		CBFD64ED2B168A5D003BCE1C /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */; };
 		CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */; };
 		CBFD64F12B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */; };
+		CBFD64F32B16B277003BCE1C /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64F22B16B277003BCE1C /* UIButton+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		CBFD64F22B16B277003BCE1C /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6536172B115FEF00BEC240 /* FeedViewControllerTests.swift */,
+				CBFD64F22B16B277003BCE1C /* UIButton+TestHelpers.swift */,
 				CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */,
 				CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */,
 			);
@@ -722,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6536182B115FEF00BEC240 /* FeedViewControllerTests.swift in Sources */,
+				CBFD64F32B16B277003BCE1C /* UIButton+TestHelpers.swift in Sources */,
 				CBFD64F12B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift in Sources */,
 				CB65360D2B11468E00BEC240 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */,
