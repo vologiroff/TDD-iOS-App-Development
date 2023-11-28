@@ -1,5 +1,5 @@
 //
-//  FeedViewController+TestHelpers.swift
+//  FeedViewControllerTest+TestHelpers.swift
 //  ApplicationFeediOSTests
 //
 //  Created by Kantemir Vologirov on 29.11.23..
