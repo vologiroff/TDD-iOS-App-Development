@@ -39,7 +39,6 @@ final class FeedViewControllerTests: XCTestCase {
         sut.simulateUserInitiatedFeedReload()
         XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once user initiates a reload")
         
-        loader.completeFeedLoading(at: 1)
         loader.completeFeedLoadingWithError(at: 1)
         XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading completes with error")
         
@@ -387,11 +386,12 @@ private extension FeedViewController {
         
         refreshControl?.allTargets.forEach { target in
             refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach {
-                fake.addTarget(self, action: Selector($0), for: .valueChanged)
+                fake.addTarget(target, action: Selector($0), for: .valueChanged)
             }
         }
         
         refreshControl = fake
+        refreshController?.view = fake
     }
     
     func simulateUserInitiatedFeedReload() {
