@@ -267,7 +267,7 @@
 		CB6535F92B100C0700BEC240 /* ApplicationFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB6536172B115FEF00BEC240 /* FeedViewControllerTests.swift */,
+				CBFD64F72B16B36B003BCE1C /* Controllers */,
 				CBFD64F62B16B339003BCE1C /* Helpers */,
 			);
 			path = ApplicationFeediOSTests;
@@ -484,6 +484,14 @@
 				CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBFD64F72B16B36B003BCE1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB6536172B115FEF00BEC240 /* FeedViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
