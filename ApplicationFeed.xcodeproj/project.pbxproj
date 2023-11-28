@@ -61,6 +61,7 @@
 		CBFD64EB2B1688F1003BCE1C /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EA2B1688F1003BCE1C /* FeedImageDataLoader.swift */; };
 		CBFD64ED2B168A5D003BCE1C /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */; };
 		CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */; };
+		CBFD64F12B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		CBFD64EA2B1688F1003BCE1C /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		CBFD64EC2B168A5D003BCE1C /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			children = (
 				CB6536172B115FEF00BEC240 /* FeedViewControllerTests.swift */,
 				CBFD64EE2B16B1FC003BCE1C /* UIImage+TestHelpers.swift */,
+				CBFD64F02B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift */,
 			);
 			path = ApplicationFeediOSTests;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6536182B115FEF00BEC240 /* FeedViewControllerTests.swift in Sources */,
+				CBFD64F12B16B239003BCE1C /* UIRefreshControl+TestHelpers.swift in Sources */,
 				CB65360D2B11468E00BEC240 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				CBFD64EF2B16B1FC003BCE1C /* UIImage+TestHelpers.swift in Sources */,
 			);
