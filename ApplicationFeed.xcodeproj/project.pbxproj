@@ -275,8 +275,7 @@
 		CB6535F92B100C0700BEC240 /* ApplicationFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBFD64F72B16B36B003BCE1C /* Controllers */,
-				CBFD64F62B16B339003BCE1C /* Helpers */,
+				CBFD65012B16B986003BCE1C /* Feed UI */,
 			);
 			path = ApplicationFeediOSTests;
 			sourceTree = "<group>";
@@ -512,6 +511,15 @@
 				CBFD64FB2B16B522003BCE1C /* FeedImageCell+TestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBFD65012B16B986003BCE1C /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				CBFD64F72B16B36B003BCE1C /* Controllers */,
+				CBFD64F62B16B339003BCE1C /* Helpers */,
+			);
+			path = "Feed UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
