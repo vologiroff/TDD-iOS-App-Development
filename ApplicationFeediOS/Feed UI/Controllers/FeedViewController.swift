@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ApplicationFeed
 
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
     public var refreshController: FeedRefreshViewController?
@@ -14,7 +13,6 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         didSet { tableView.reloadData() }
     }
     private var onViewIsAppearing: ((FeedViewController) -> Void)?
-    private var cellControllers = [IndexPath: FeedImageCellController]()
     
     convenience init(refreshController: FeedRefreshViewController) {
         self.init()
