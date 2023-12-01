@@ -5,7 +5,6 @@
 //  Created by Kantemir Vologirov on 30.11.23..
 //
 
-import Foundation
 import ApplicationFeed
 
 final class FeedViewModel {

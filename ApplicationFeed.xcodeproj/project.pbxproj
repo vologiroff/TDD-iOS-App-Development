@@ -274,6 +274,7 @@
 		CB6535EF2B100C0600BEC240 /* ApplicationFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				CB6C00DB2B1A9DCD00D64CE5 /* Feed Presentation */,
 				CBFD64E92B1688D5003BCE1C /* Feed Image Loader */,
 				CBFD64E62B16883C003BCE1C /* Feed UI */,
 			);
@@ -293,6 +294,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB6C00DB2B1A9DCD00D64CE5 /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CBFD65082B180D46003BCE1C /* FeedViewModel.swift */,
+				CBFD650A2B181A55003BCE1C /* FeedImageViewModel.swift */,
+			);
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		CB7A73CF2AEED60F005B3C41 /* Feed Cache */ = {
@@ -368,7 +378,6 @@
 		CBD9AF502AD9FD9500ECCC91 = {
 			isa = PBXGroup;
 			children = (
-				CBFD64FF2B16B697003BCE1C /* FeedViewControllerTest+Assertions.swift */,
 				CBEB52182AE7534E00E4111D /* README.md */,
 				CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */,
 				CBD9AF682AD9FD9500ECCC91 /* ApplicationFeedTests */,
@@ -462,7 +471,6 @@
 				CBFD65042B16C236003BCE1C /* Composers */,
 				CBFD64E72B168855003BCE1C /* Controllers */,
 				CBFD64E82B168873003BCE1C /* Views */,
-				CBFD65072B180D31003BCE1C /* Models */,
 			);
 			path = "Feed UI";
 			sourceTree = "<group>";
@@ -519,6 +527,7 @@
 			children = (
 				CBFD64F92B16B3E2003BCE1C /* FeedViewControllerTest+TestHelpers.swift */,
 				CBFD64FD2B16B5E1003BCE1C /* FeedViewControllerTests+LoaderSpy.swift */,
+				CBFD64FF2B16B697003BCE1C /* FeedViewControllerTest+Assertions.swift */,
 				CBFD64FB2B16B522003BCE1C /* FeedImageCell+TestHelpers.swift */,
 			);
 			path = Helpers;
@@ -539,15 +548,6 @@
 				CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */,
 			);
 			path = Composers;
-			sourceTree = "<group>";
-		};
-		CBFD65072B180D31003BCE1C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CBFD65082B180D46003BCE1C /* FeedViewModel.swift */,
-				CBFD650A2B181A55003BCE1C /* FeedImageViewModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
