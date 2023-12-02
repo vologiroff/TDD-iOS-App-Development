@@ -5,7 +5,6 @@
 //  Created by Kantemir Vologirov on 2.12.23..
 //
 
-import Foundation
 import ApplicationFeed
 
 protocol FeedImageView {
