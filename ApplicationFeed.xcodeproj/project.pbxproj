@@ -731,6 +731,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = CBD9AF502AD9FD9500ECCC91;
 			productRefGroup = CBD9AF5B2AD9FD9500ECCC91 /* Products */;
