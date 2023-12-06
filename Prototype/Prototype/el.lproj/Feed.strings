@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "↻"; ObjectID = "MyM-ON-grv"; */
+"MyM-ON-grv.configuration.title" = "↻";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MyM-ON-grv"; */
+"MyM-ON-grv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description"; ObjectID = "ajl-C4-kLe"; */
+"ajl-C4-kLe.text" = "Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description";
+
+/* Class = "UILabel"; text = "Location Location"; ObjectID = "eQT-Bd-hfo"; */
+"eQT-Bd-hfo.text" = "Location Location";
