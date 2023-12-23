@@ -1,0 +1,10 @@
+/* 
+  Feed.strings
+  ApplicationFeed
+
+  Created by Kantemir Vologirov on 24.12.23..
+  
+*/
+
+"FEED_VIEW_TITLE" = "My Feed";
+"FEED_VIEW_CONNECTION_ERROR" = "Couldn't connect to server";
