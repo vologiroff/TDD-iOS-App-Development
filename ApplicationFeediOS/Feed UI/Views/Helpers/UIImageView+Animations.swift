@@ -1,5 +1,5 @@
 //
-//  UIImage+Animations.swift
+//  UIImageView+Animations.swift
 //  ApplicationFeediOS
 //
 //  Created by Kantemir Vologirov on 4.12.23..
