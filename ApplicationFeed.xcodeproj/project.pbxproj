@@ -254,6 +254,7 @@
 		CBFD64FF2B16B697003BCE1C /* FeedViewControllerTest+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTest+Assertions.swift"; sourceTree = "<group>"; };
 		CBFD65022B16BCD3003BCE1C /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
+		CBFDE4802C3B3BD0003C523E /* FeedStore 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FeedStore 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +404,7 @@
 				CB7E97CB2B0A5A6100CF676B /* CoreDataFeedStoreTests.swift */,
 				CB6D58E22B6EFE3200345A71 /* LocalFeedImageDataLoaderTests.swift */,
 				CBC7CCC72B6F0FA900BF0428 /* CacheFeedImageDataUseCaseTests.swift */,
+				CBC7CCC92B6F131500BF0428 /* CoreDataFeedImageDataStoreTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -478,7 +480,6 @@
 		CBD9AF502AD9FD9500ECCC91 = {
 			isa = PBXGroup;
 			children = (
-				CBC7CCC92B6F131500BF0428 /* CoreDataFeedImageDataStoreTests.swift */,
 				CBEB52182AE7534E00E4111D /* README.md */,
 				CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */,
 				CBD9AF682AD9FD9500ECCC91 /* ApplicationFeedTests */,
@@ -1591,9 +1592,10 @@
 		CB7E97CF2B0A5FCC00CF676B /* FeedStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				CBFDE4802C3B3BD0003C523E /* FeedStore 2.xcdatamodel */,
 				CB7E97D02B0A5FCC00CF676B /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = CB7E97D02B0A5FCC00CF676B /* FeedStore.xcdatamodel */;
+			currentVersion = CBFDE4802C3B3BD0003C523E /* FeedStore 2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
