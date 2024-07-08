@@ -101,6 +101,7 @@
 		CBFD65002B16B697003BCE1C /* FeedViewControllerTest+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD64FF2B16B697003BCE1C /* FeedViewControllerTest+Assertions.swift */; };
 		CBFD65032B16BCD3003BCE1C /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD65022B16BCD3003BCE1C /* FeedImageCellController.swift */; };
 		CBFD65062B16C243003BCE1C /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */; };
+		CBFDE4822C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,7 @@
 		CBFD65022B16BCD3003BCE1C /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		CBFDE4802C3B3BD0003C523E /* FeedStore 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FeedStore 2.xcdatamodel"; sourceTree = "<group>"; };
+		CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7E97CD2B0A5DE900CF676B /* CoreDataFeedStore.swift */,
+				CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */,
 				CB7E97E02B0A882C00CF676B /* CoreDataHelpers.swift */,
 				CB7E97E22B0A888800CF676B /* ManagedCache.swift */,
 				CB7E97E42B0A88DB00CF676B /* ManagedFeedImage.swift */,
@@ -951,6 +954,7 @@
 				CBB0E3E12AE47E830064DBB1 /* URLSessionHTTPClient.swift in Sources */,
 				CBDD84262ADA115E00E20A5B /* RemoteFeedLoader.swift in Sources */,
 				CBF826092B389A7F00BF9EE8 /* FeedImagePresenter.swift in Sources */,
+				CBFDE4822C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */,
 				CBDD842A2ADC5F4D00E20A5B /* HTTPClient.swift in Sources */,
 				CB7E97E12B0A882C00CF676B /* CoreDataHelpers.swift in Sources */,
 				CB6F29D12B38847300C2C613 /* FeedLoadingViewModel.swift in Sources */,
