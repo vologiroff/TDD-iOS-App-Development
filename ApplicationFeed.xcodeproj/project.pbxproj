@@ -102,6 +102,7 @@
 		CBFD65032B16BCD3003BCE1C /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD65022B16BCD3003BCE1C /* FeedImageCellController.swift */; };
 		CBFD65062B16C243003BCE1C /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */; };
 		CBFDE4822C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */; };
+		CBFDE4842C3CA8E6003C523E /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFDE4832C3CA8E6003C523E /* CoreDataFeedStore+FeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +258,7 @@
 		CBFD65052B16C243003BCE1C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		CBFDE4802C3B3BD0003C523E /* FeedStore 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FeedStore 2.xcdatamodel"; sourceTree = "<group>"; };
 		CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataStore.swift"; sourceTree = "<group>"; };
+		CBFDE4832C3CA8E6003C523E /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7E97CD2B0A5DE900CF676B /* CoreDataFeedStore.swift */,
+				CBFDE4832C3CA8E6003C523E /* CoreDataFeedStore+FeedStore.swift */,
 				CBFDE4812C3BFBA9003C523E /* CoreDataFeedStore+FeedImageDataStore.swift */,
 				CB7E97E02B0A882C00CF676B /* CoreDataHelpers.swift */,
 				CB7E97E22B0A888800CF676B /* ManagedCache.swift */,
@@ -961,6 +964,7 @@
 				CBDD84192AD9FF4A00E20A5B /* FeedLoader.swift in Sources */,
 				CB7E97CE2B0A5DE900CF676B /* CoreDataFeedStore.swift in Sources */,
 				CBC15EA22B44CB0C005FF3A3 /* FeedImageDataLoader.swift in Sources */,
+				CBFDE4842C3CA8E6003C523E /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				CB7E97E32B0A888800CF676B /* ManagedCache.swift in Sources */,
 				CBDD842C2ADC5FA200E20A5B /* FeedItemsMapper.swift in Sources */,
 				CBACD5892AF3111000F7DA05 /* RemoteFeedItem.swift in Sources */,
