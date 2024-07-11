@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ApplicationFeed.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:ApplicationApp/ApplicationApp.xcodeproj">
    </FileRef>
 </Workspace>
