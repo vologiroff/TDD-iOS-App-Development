@@ -15,6 +15,16 @@
           "containerPath" : "container:ApplicationFeed.xcodeproj",
           "identifier" : "CB6535ED2B100C0600BEC240",
           "name" : "ApplicationFeediOS"
+        },
+        {
+          "containerPath" : "container:ApplicationFeed.xcodeproj",
+          "identifier" : "CBD9AF592AD9FD9500ECCC91",
+          "name" : "ApplicationFeed"
+        },
+        {
+          "containerPath" : "container:ApplicationApp.xcodeproj",
+          "identifier" : "CBFC287C2C409362009A61AF",
+          "name" : "ApplicationApp"
         }
       ]
     },
@@ -51,6 +61,14 @@
         "containerPath" : "container:ApplicationFeed.xcodeproj",
         "identifier" : "CBD9AF632AD9FD9500ECCC91",
         "name" : "ApplicationFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationApp.xcodeproj",
+        "identifier" : "CBFC289F2C4296DB009A61AF",
+        "name" : "ApplicationAppTests"
       }
     }
   ],
