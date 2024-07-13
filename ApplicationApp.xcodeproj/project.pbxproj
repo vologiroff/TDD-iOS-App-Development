@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB11C2B42C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2B32C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift */; };
+		CB11C2B52C42A9840046AED1 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2B32C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift */; };
 		CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28802C409362009A61AF /* AppDelegate.swift */; };
 		CBFC28832C409362009A61AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28822C409362009A61AF /* SceneDelegate.swift */; };
 		CBFC28852C409362009A61AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28842C409362009A61AF /* ViewController.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB11C2B32C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		CBFC287D2C409362009A61AF /* ApplicationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC28802C409362009A61AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFC28822C409362009A61AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				CBFC28892C409363009A61AF /* Assets.xcassets */,
 				CBFC288B2C409363009A61AF /* LaunchScreen.storyboard */,
 				CBFC288E2C409363009A61AF /* Info.plist */,
+				CB11C2B32C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift */,
 			);
 			path = ApplicationApp;
 			sourceTree = "<group>";
@@ -234,6 +238,7 @@
 			files = (
 				CBFC28852C409362009A61AF /* ViewController.swift in Sources */,
 				CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */,
+				CB11C2B42C42A9620046AED1 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				CBFC28832C409362009A61AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB11C2B52C42A9840046AED1 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				CBFC28A32C4296DB009A61AF /* ApplicationAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
