@@ -13,7 +13,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../ApplicationApp/TestPlans/ApplicationFeedAPIEndToEndTests.xctestplan"
+            reference = "container:../ApplicationFeedAPIEndToEndTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

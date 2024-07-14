@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "4DF4FDB3-5A13-4D5C-BFFB-3E05A2357ACA",
+      "name" : "Configuration 1",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CBB0E3E62AE5EE900064DBB1",
+        "name" : "ApplicationFeedAPIEndToEndTests"
+      }
+    }
+  ],
+  "version" : 1
+}

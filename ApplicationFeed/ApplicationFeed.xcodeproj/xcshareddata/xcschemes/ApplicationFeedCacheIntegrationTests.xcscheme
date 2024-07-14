@@ -13,7 +13,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../ApplicationApp/TestPlans/ApplicationFeedCacheIntegrationTests.xctestplan"
+            reference = "container:../ApplicationFeedCacheIntegrationTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB6535ED2B100C0600BEC240"
-               BuildableName = "ApplicationFeediOS.framework"
-               BlueprintName = "ApplicationFeediOS"
-               ReferencedContainer = "container:ApplicationFeed.xcodeproj">
+               BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
+               BuildableName = "ApplicationFeed.framework"
+               BlueprintName = "ApplicationFeed"
+               ReferencedContainer = "container:../ApplicationFeed/ApplicationFeed.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CBFC287C2C409362009A61AF"
+               BuildableName = "ApplicationApp.app"
+               BlueprintName = "ApplicationApp"
+               ReferencedContainer = "container:ApplicationApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,23 +43,10 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../ApplicationFeediOS.xctestplan"
+            reference = "container:../CI_iOS.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB6535F42B100C0700BEC240"
-               BuildableName = "ApplicationFeediOSTests.xctest"
-               BlueprintName = "ApplicationFeediOSTests"
-               ReferencedContainer = "container:ApplicationFeed.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -67,10 +68,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB6535ED2B100C0600BEC240"
-            BuildableName = "ApplicationFeediOS.framework"
-            BlueprintName = "ApplicationFeediOS"
-            ReferencedContainer = "container:ApplicationFeed.xcodeproj">
+            BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
+            BuildableName = "ApplicationFeed.framework"
+            BlueprintName = "ApplicationFeed"
+            ReferencedContainer = "container:../ApplicationFeed/ApplicationFeed.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

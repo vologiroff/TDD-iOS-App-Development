@@ -1,0 +1,57 @@
+{
+  "configurations" : [
+    {
+      "id" : "B3C9F2A2-078D-465C-942C-2C5E1B406AD7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationApp.xcodeproj",
+        "identifier" : "CBFC289F2C4296DB009A61AF",
+        "name" : "ApplicationAppTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CBB0E3E62AE5EE900064DBB1",
+        "name" : "ApplicationFeedAPIEndToEndTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB7E97E92B0AEDA900CF676B",
+        "name" : "ApplicationFeedCacheIntegrationTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CBD9AF632AD9FD9500ECCC91",
+        "name" : "ApplicationFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB6535F42B100C0700BEC240",
+        "name" : "ApplicationFeediOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}
