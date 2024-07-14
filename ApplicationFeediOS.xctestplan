@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "D167A4A4-3E5F-4667-B1F4-C05B8C1D4963",
+      "name" : "Configuration 1",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB6535F42B100C0700BEC240",
+        "name" : "ApplicationFeediOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}

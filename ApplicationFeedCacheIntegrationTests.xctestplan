@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "5868BC71-D749-4C7E-91FB-736A2F8E1A63",
+      "name" : "Configuration 1",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ApplicationFeed.xcodeproj",
+        "identifier" : "CB7E97E92B0AEDA900CF676B",
+        "name" : "ApplicationFeedCacheIntegrationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
