@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
-               BuildableName = "ApplicationFeed.framework"
-               BlueprintName = "ApplicationFeed"
+               BlueprintIdentifier = "CB6535ED2B100C0600BEC240"
+               BuildableName = "ApplicationFeediOS.framework"
+               BlueprintName = "ApplicationFeediOS"
                ReferencedContainer = "container:ApplicationFeed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TestPlans/ApplicationFeed.xctestplan"
+            reference = "container:../ApplicationApp/TestPlans/ApplicationFeediOS.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -39,9 +39,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBD9AF632AD9FD9500ECCC91"
-               BuildableName = "ApplicationFeedTests.xctest"
-               BlueprintName = "ApplicationFeedTests"
+               BlueprintIdentifier = "CB6535F42B100C0700BEC240"
+               BuildableName = "ApplicationFeediOSTests.xctest"
+               BlueprintName = "ApplicationFeediOSTests"
                ReferencedContainer = "container:ApplicationFeed.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -67,9 +67,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
-            BuildableName = "ApplicationFeed.framework"
-            BlueprintName = "ApplicationFeed"
+            BlueprintIdentifier = "CB6535ED2B100C0600BEC240"
+            BuildableName = "ApplicationFeediOS.framework"
+            BlueprintName = "ApplicationFeediOS"
             ReferencedContainer = "container:ApplicationFeed.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
