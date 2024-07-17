@@ -28,6 +28,8 @@
 		CB84D3672C4526F70003722B /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3662C4526F70003722B /* XCTestCase+FeedImageDataLoader.swift */; };
 		CB84D36B2C452AA90003722B /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D36A2C452AA90003722B /* FeedImageDataLoaderCacheDecorator.swift */; };
 		CB84D36C2C452AAC0003722B /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D36A2C452AA90003722B /* FeedImageDataLoaderCacheDecorator.swift */; };
+		CB84D3742C47A3A30003722B /* ApplicationAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3732C47A3A30003722B /* ApplicationAppUIAcceptanceTests.swift */; };
+		CB84D3762C47A3A30003722B /* ApplicationAppUIAcceptanceTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3752C47A3A30003722B /* ApplicationAppUIAcceptanceTestsLaunchTests.swift */; };
 		CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28802C409362009A61AF /* AppDelegate.swift */; };
 		CBFC28832C409362009A61AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28822C409362009A61AF /* SceneDelegate.swift */; };
 		CBFC28852C409362009A61AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28842C409362009A61AF /* ViewController.swift */; };
@@ -38,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB84D3772C47A3A30003722B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFC28752C409362009A61AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFC287C2C409362009A61AF;
+			remoteInfo = ApplicationApp;
+		};
 		CBFC28A42C4296DB009A61AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBFC28752C409362009A61AF /* Project object */;
@@ -78,6 +87,9 @@
 		CB84D3642C4525DD0003722B /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		CB84D3662C4526F70003722B /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		CB84D36A2C452AA90003722B /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		CB84D3712C47A3A30003722B /* ApplicationAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB84D3732C47A3A30003722B /* ApplicationAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
+		CB84D3752C47A3A30003722B /* ApplicationAppUIAcceptanceTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAppUIAcceptanceTestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBFC287D2C409362009A61AF /* ApplicationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC28802C409362009A61AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBFC28822C409362009A61AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB84D36E2C47A3A30003722B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBFC287A2C409362009A61AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,11 +142,21 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CB84D3722C47A3A30003722B /* ApplicationAppUIAcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB84D3732C47A3A30003722B /* ApplicationAppUIAcceptanceTests.swift */,
+				CB84D3752C47A3A30003722B /* ApplicationAppUIAcceptanceTestsLaunchTests.swift */,
+			);
+			path = ApplicationAppUIAcceptanceTests;
+			sourceTree = "<group>";
+		};
 		CBFC28742C409362009A61AF = {
 			isa = PBXGroup;
 			children = (
 				CBFC287F2C409362009A61AF /* ApplicationApp */,
 				CBFC28A12C4296DB009A61AF /* ApplicationAppTests */,
+				CB84D3722C47A3A30003722B /* ApplicationAppUIAcceptanceTests */,
 				CBFC287E2C409362009A61AF /* Products */,
 				CBFC28942C4094E2009A61AF /* Frameworks */,
 			);
@@ -138,6 +167,7 @@
 			children = (
 				CBFC287D2C409362009A61AF /* ApplicationApp.app */,
 				CBFC28A02C4296DB009A61AF /* ApplicationAppTests.xctest */,
+				CB84D3712C47A3A30003722B /* ApplicationAppUIAcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +214,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB84D3702C47A3A30003722B /* ApplicationAppUIAcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB84D37B2C47A3A30003722B /* Build configuration list for PBXNativeTarget "ApplicationAppUIAcceptanceTests" */;
+			buildPhases = (
+				CB84D36D2C47A3A30003722B /* Sources */,
+				CB84D36E2C47A3A30003722B /* Frameworks */,
+				CB84D36F2C47A3A30003722B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB84D3782C47A3A30003722B /* PBXTargetDependency */,
+			);
+			name = ApplicationAppUIAcceptanceTests;
+			productName = ApplicationAppUIAcceptanceTests;
+			productReference = CB84D3712C47A3A30003722B /* ApplicationAppUIAcceptanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		CBFC287C2C409362009A61AF /* ApplicationApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBFC28912C409363009A61AF /* Build configuration list for PBXNativeTarget "ApplicationApp" */;
@@ -230,6 +278,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					CB84D3702C47A3A30003722B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CBFC287C2C409362009A61AF;
+					};
 					CBFC287C2C409362009A61AF = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -254,11 +306,19 @@
 			targets = (
 				CBFC287C2C409362009A61AF /* ApplicationApp */,
 				CBFC289F2C4296DB009A61AF /* ApplicationAppTests */,
+				CB84D3702C47A3A30003722B /* ApplicationAppUIAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB84D36F2C47A3A30003722B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBFC287B2C409362009A61AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +339,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB84D36D2C47A3A30003722B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB84D3762C47A3A30003722B /* ApplicationAppUIAcceptanceTestsLaunchTests.swift in Sources */,
+				CB84D3742C47A3A30003722B /* ApplicationAppUIAcceptanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBFC28792C409362009A61AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +386,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB84D3782C47A3A30003722B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFC287C2C409362009A61AF /* ApplicationApp */;
+			targetProxy = CB84D3772C47A3A30003722B /* PBXContainerItemProxy */;
+		};
 		CBFC28A52C4296DB009A61AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBFC287C2C409362009A61AF /* ApplicationApp */;
@@ -344,6 +418,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB84D3792C47A3A30003722B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59SS4KT665;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vologirov.playground.ApplicationAppUIAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApplicationApp;
+			};
+			name = Debug;
+		};
+		CB84D37A2C47A3A30003722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59SS4KT665;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vologirov.playground.ApplicationAppUIAcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ApplicationApp;
+			};
+			name = Release;
+		};
 		CBFC288F2C409363009A61AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -560,6 +668,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB84D37B2C47A3A30003722B /* Build configuration list for PBXNativeTarget "ApplicationAppUIAcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB84D3792C47A3A30003722B /* Debug */,
+				CB84D37A2C47A3A30003722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBFC28782C409362009A61AF /* Build configuration list for PBXProject "ApplicationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
