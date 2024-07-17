@@ -470,10 +470,10 @@
 			isa = PBXGroup;
 			children = (
 				CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */,
+				CB6535EF2B100C0600BEC240 /* ApplicationFeediOS */,
 				CBD9AF682AD9FD9500ECCC91 /* ApplicationFeedTests */,
 				CBB0E3E82AE5EE900064DBB1 /* ApplicationFeedAPIEndToEndTests */,
 				CB7E97EB2B0AEDA900CF676B /* ApplicationFeedCacheIntegrationTests */,
-				CB6535EF2B100C0600BEC240 /* ApplicationFeediOS */,
 				CB6535F92B100C0700BEC240 /* ApplicationFeediOSTests */,
 				CBD9AF5B2AD9FD9500ECCC91 /* Products */,
 				CB6536112B1153BC00BEC240 /* Frameworks */,
