@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1510"
+   LastUpgradeVersion = "1540"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
-               BuildableName = "ApplicationFeed.framework"
-               BlueprintName = "ApplicationFeed"
-               ReferencedContainer = "container:../ApplicationFeed/ApplicationFeed.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CBFC287C2C409362009A61AF"
-               BuildableName = "ApplicationApp.app"
-               BlueprintName = "ApplicationApp"
-               ReferencedContainer = "container:ApplicationApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -43,7 +14,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../CI_iOS.xctestplan"
+            reference = "container:../ApplicationAppUIAcceptanceTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -78,15 +49,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBD9AF592AD9FD9500ECCC91"
-            BuildableName = "ApplicationFeed.framework"
-            BlueprintName = "ApplicationFeed"
-            ReferencedContainer = "container:../ApplicationFeed/ApplicationFeed.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

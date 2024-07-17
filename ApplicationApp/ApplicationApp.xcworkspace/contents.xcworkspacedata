@@ -29,6 +29,9 @@
          location = "group:../ApplicationFeedAPIEndToEndTests.xctestplan">
       </FileRef>
       <FileRef
+         location = "group:../ApplicationAppUIAcceptanceTests.xctestplan">
+      </FileRef>
+      <FileRef
          location = "group:../ApplicationFeediOS.xctestplan">
       </FileRef>
    </Group>
