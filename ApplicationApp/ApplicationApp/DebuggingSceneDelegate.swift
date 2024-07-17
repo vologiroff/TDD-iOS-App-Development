@@ -19,13 +19,6 @@ class DebuggingSceneDelegate: SceneDelegate {
         
         super.scene(scene, willConnectTo: session, options: connectionOptions)
     }
-    
-    override func makeRemoteClient() -> HTTPClient {
-        if let connectivity = UserDefaults.standard.string(forKey: "connectivity") {
-            return DebuggingHTTPClient(connectivity: connectivity)
-        }
-        return super.makeRemoteClient()
-    }
 }
 
 private class DebuggingHTTPClient: HTTPClient {
