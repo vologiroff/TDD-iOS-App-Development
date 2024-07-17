@@ -1,4 +1,4 @@
-# ApplicationFeed
+# TDD iOS App Development
 
 [![CI](https://github.com/vologiroff/ApplicationFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/vologiroff/ApplicationFeed/actions/workflows/CI.yml)
 
