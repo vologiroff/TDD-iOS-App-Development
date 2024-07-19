@@ -10,25 +10,33 @@ import ApplicationFeediOS
 @testable import ApplicationFeed
 
 class FeedSnapshotTests: XCTestCase {
-
+    
     func test_emptyFeed() {
         let sut = makeSUT()
-
+        
         sut.display(emptyFeed())
-
+        
         record(snapshot: sut.snapshot(), named: "EMPTY_FEED")
     }
     
     func test_feedWithContent() {
         let sut = makeSUT()
-
+        
         sut.display(feedWithContent())
-
+        
         record(snapshot: sut.snapshot(), named: "FEED_WITH_CONTENT")
     }
-
+    
+    func test_feedWithErrorMessage() {
+        let sut = makeSUT()
+        
+        sut.display(.error(message: "This is a\nmulti-line\nerror message"))
+        
+        record(snapshot: sut.snapshot(), named: "FEED_WITH_ERROR_MESSAGE")
+    }
+    
     // MARK: - Helpers
-
+    
     private func makeSUT() -> FeedViewController {
         let bundle = Bundle(for: FeedViewController.self)
         let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
@@ -55,30 +63,30 @@ class FeedSnapshotTests: XCTestCase {
     private func emptyFeed() -> [FeedImageCellController] {
         return []
     }
-
+    
     private func record(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
         guard let snapshotData = snapshot.pngData() else {
             XCTFail("Failed to generate PNG data representation from snapshot", file: file, line: line)
             return
         }
-
+        
         let snapshotURL = URL(fileURLWithPath: String(describing: file))
             .deletingLastPathComponent()
             .appendingPathComponent("snapshots")
             .appendingPathComponent("\(name).png")
-
+        
         do {
             try FileManager.default.createDirectory(
                 at: snapshotURL.deletingLastPathComponent(),
                 withIntermediateDirectories: true
             )
-
+            
             try snapshotData.write(to: snapshotURL)
         } catch {
             XCTFail("Failed to record snapshot with error: \(error)", file: file, line: line)
         }
     }
-
+    
 }
 
 extension UIViewController {
@@ -97,7 +105,7 @@ private extension FeedViewController {
             stub.controller = cellController
             return cellController
         }
-
+        
         display(cells)
     }
 }
@@ -105,7 +113,7 @@ private extension FeedViewController {
 private class ImageStub: FeedImageCellControllerDelegate {
     let viewModel: FeedImageViewModel<UIImage>
     weak var controller: FeedImageCellController?
-
+    
     init(description: String?, location: String?, image: UIImage?) {
         viewModel = FeedImageViewModel(
             description: description,
@@ -115,10 +123,10 @@ private class ImageStub: FeedImageCellControllerDelegate {
             shouldRetry: image == nil
         )
     }
-
+    
     func didRequestImage() {
         controller?.display(viewModel)
     }
-
+    
     func didCancelImageRequest() {}
 }
