@@ -11,7 +11,7 @@ import ApplicationFeediOS
 
 class SceneDelegateTests: XCTestCase {
     
-    func test_configureWindow_setsWindowAsKeyAndVisible() {
+    func test_configureWindow_configuresRootViewController() {
         let window = UIWindowSpy()
         let sut = SceneDelegate()
         sut.window = window
