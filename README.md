@@ -1,8 +1,8 @@
 # TDD iOS App Development
 
-[![CI-iOS](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/CI-iOS.yml/badge.svg)]
-[![CI-macOS](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/CI-macOS.yml/badge.svg)]
-[![Deploy](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/Deploy.yml/badge.svg)]
+![CI-iOS](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/CI-iOS.yml/badge.svg)
+![CI-macOS](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/CI-macOS.yml/badge.svg)
+![Deploy](https://github.com/vologiroff/TDD-iOS-App-Development/actions/workflows/Deploy.yml/badge.svg)
 
 ## Image Feed Feature Specs
 
