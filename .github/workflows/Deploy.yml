@@ -1,0 +1,38 @@
+name: CI-macOS
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install provisioning profile
+      run: gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/profile.mobileprovision .github/deployment/profile.mobileprovision.gpg
+        mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+        cp .github/deployment/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+        
+    - name: Install keychain certificate
+      run: gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/certificate.p12 .github/deployment/certificate.p12.gpg
+        security create-keychain -p "" build.keychain
+        security import .github/deployment/certificate.p12 -t agg -k ~/Library/Keychains/build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
+        security list-keychains -s ~/Library/Keychains/build.keychain
+        security default-keychain -s ~/Library/Keychains/build.keychain
+        security unlock-keychain -p "" ~/Library/Keychains/build.keychain
+        security set-key-partition-list -S apple-tool:,apple: -s -k "" ~/Library/Keychains/build.keychain
+
+    - name: Set build number
+      run: /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $GITHUB_RUN_NUMBER" "ApplicationApp/ApplicationApp/Info.plist"
+
+    - name: Export
+      run: xcodebuild -exportArchive -archivePath DerivedData/Archive/ApplicationApp.xcarchive -exportOptionsPlist .github/deployment/ExportOptions.plist -exportPath DerivedData/ipa
+
+    - name: Deploy
+      run: xcrun altool --upload-app --type ios --file "DerivedData/ipa/ApplicationApp.ipa" --username "${{ secrets.APPSTORE_USERNAME }}" --password "${{ secrets.APPSTORE_PASSWORD }}" --verbose
