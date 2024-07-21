@@ -9,7 +9,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.vologirov.ApplicationApp</key>
-		<string>ApplicationApp</string>
+		<string>ApplicationFeed distribution</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
