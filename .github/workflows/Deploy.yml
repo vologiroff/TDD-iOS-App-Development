@@ -34,6 +34,7 @@ jobs:
       run: |
         buildNumber=$(($GITHUB_RUN_NUMBER + 1))
         /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "ApplicationApp/ApplicationApp/Info.plist"
+        echo $buildNumber
         
     - name: Build
       run: xcodebuild clean archive -sdk iphoneos -workspace ApplicationApp/ApplicationApp.xcworkspace -configuration "Release" -scheme "ApplicationApp" -derivedDataPath "DerivedData" -archivePath "DerivedData/Archive/ApplicationApp.xcarchive"
