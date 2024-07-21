@@ -55,7 +55,6 @@
 		CB84D3B82C4A8C810003722B /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3B72C4A8C810003722B /* UIViewController+Snapshot.swift */; };
 		CB84D3BA2C4A8CD00003722B /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3B92C4A8CD00003722B /* XCTestCase+Snapshot.swift */; };
 		CB84D3BE2C4C47B40003722B /* ApplicationFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD9AF5A2AD9FD9500ECCC91 /* ApplicationFeed.framework */; };
-		CB84D3BF2C4C47B40003722B /* ApplicationFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBD9AF5A2AD9FD9500ECCC91 /* ApplicationFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBACD5892AF3111000F7DA05 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACD5882AF3111000F7DA05 /* RemoteFeedItem.swift */; };
 		CBACD58B2AF311EB00F7DA05 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACD58A2AF311EB00F7DA05 /* LocalFeedImage.swift */; };
 		CBB0E3DF2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0E3DE2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -132,20 +131,6 @@
 			remoteInfo = ApplicationFeed;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CB84D3C02C4C47B40003722B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CB84D3BF2C4C47B40003722B /* ApplicationFeed.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB1C83C22AF06F3600529E66 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
@@ -619,7 +604,6 @@
 				CB6535EA2B100C0600BEC240 /* Sources */,
 				CB6535EB2B100C0600BEC240 /* Frameworks */,
 				CB6535EC2B100C0600BEC240 /* Resources */,
-				CB84D3C02C4C47B40003722B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
