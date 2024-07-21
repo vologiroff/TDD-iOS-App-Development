@@ -15,12 +15,14 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Install provisioning profile
-      run: gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/profile.mobileprovision .github/deployment/profile.mobileprovision.gpg
+      run: |
+        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/profile.mobileprovision .github/deployment/profile.mobileprovision.gpg
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
         cp .github/deployment/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
         
     - name: Install keychain certificate
-      run: gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/certificate.p12 .github/deployment/certificate.p12.gpg
+      run: |
+        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.SECRET_KEY }}" --output .github/deployment/certificate.p12 .github/deployment/certificate.p12.gpg
         security create-keychain -p "" build.keychain
         security import .github/deployment/certificate.p12 -t agg -k ~/Library/Keychains/build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
         security list-keychains -s ~/Library/Keychains/build.keychain
@@ -29,7 +31,12 @@ jobs:
         security set-key-partition-list -S apple-tool:,apple: -s -k "" ~/Library/Keychains/build.keychain
 
     - name: Set build number
-      run: /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $GITHUB_RUN_NUMBER" "ApplicationApp/ApplicationApp/Info.plist"
+      run: |
+        buildNumber=$(($GITHUB_RUN_NUMBER + 1))
+        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "ApplicationApp/ApplicationApp/Info.plist"
+        
+    - name: Build
+      run: xcodebuild clean archive -sdk iphoneos -workspace ApplicationApp/ApplicationApp.xcworkspace -configuration "Release" -scheme "ApplicationApp" -derivedDataPath "DerivedData" -archivePath "DerivedData/Archive/ApplicationApp.xcarchive"
 
     - name: Export
       run: xcodebuild -exportArchive -archivePath DerivedData/Archive/ApplicationApp.xcarchive -exportOptionsPlist .github/deployment/ExportOptions.plist -exportPath DerivedData/ipa
