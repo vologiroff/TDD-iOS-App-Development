@@ -32,7 +32,7 @@ jobs:
 
     - name: Set build number
       run: |
-        buildNumber=$(($GITHUB_RUN_NUMBER + 1))
+        buildNumber=$(($GITHUB_RUN_NUMBER + 3))
         /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "ApplicationApp/ApplicationApp/Info.plist"
         
     - name: Build
