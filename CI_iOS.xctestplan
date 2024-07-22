@@ -23,14 +23,6 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:ApplicationApp.xcodeproj",
-        "identifier" : "CB84D3702C47A3A30003722B",
-        "name" : "ApplicationAppUIAcceptanceTests"
-      }
-    },
-    {
-      "parallelizable" : true,
-      "target" : {
         "containerPath" : "container:..\/ApplicationFeed\/ApplicationFeed.xcodeproj",
         "identifier" : "CBB0E3E62AE5EE900064DBB1",
         "name" : "ApplicationFeedAPIEndToEndTests"
