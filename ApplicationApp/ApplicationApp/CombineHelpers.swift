@@ -9,12 +9,28 @@ import Foundation
 import Combine
 import ApplicationFeed
 
+public extension HTTPClient {
+    typealias Publisher = AnyPublisher<(Data, HTTPURLResponse), Error>
+    
+    func getPublisher(url: URL) -> Publisher {
+        var task: HTTPClientTask?
+        
+        return Deferred {
+            Future { completion in
+                task = self.get(from: url, completion: completion)
+            }
+        }
+        .handleEvents(receiveCancel: { task?.cancel() })
+        .eraseToAnyPublisher()
+    }
+}
+
 public extension FeedImageDataLoader {
     typealias Publisher = AnyPublisher<Data, Error>
-
+    
     func loadImageDataPublisher(from url: URL) -> Publisher {
         var task: FeedImageDataLoaderTask?
-
+        
         return Deferred {
             Future { completion in
                 task = self.loadImageData(from: url, completion: completion)
@@ -39,9 +55,9 @@ private extension FeedImageDataCache {
     }
 }
 
-public extension FeedLoader {
+public extension LocalFeedLoader {
     typealias Publisher = AnyPublisher<[FeedImage], Error>
-
+    
     func loadPublisher() -> Publisher {
         Deferred {
             Future(self.load)
@@ -78,11 +94,11 @@ extension DispatchQueue {
     static var immediateWhenOnMainQueueScheduler: ImmediateWhenOnMainQueueScheduler {
         ImmediateWhenOnMainQueueScheduler.shared
     }
-
+    
     struct ImmediateWhenOnMainQueueScheduler: Scheduler {
         typealias SchedulerTimeType = DispatchQueue.SchedulerTimeType
         typealias SchedulerOptions = DispatchQueue.SchedulerOptions
-
+        
         var now: SchedulerTimeType {
             DispatchQueue.main.now
         }
@@ -114,7 +130,7 @@ extension DispatchQueue {
         func schedule(after date: SchedulerTimeType, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) {
             DispatchQueue.main.schedule(after: date, tolerance: tolerance, options: options, action)
         }
-
+        
         func schedule(after date: SchedulerTimeType, interval: SchedulerTimeType.Stride, tolerance: SchedulerTimeType.Stride, options: SchedulerOptions?, _ action: @escaping () -> Void) -> Cancellable {
             DispatchQueue.main.schedule(after: date, interval: interval, tolerance: tolerance, options: options, action)
         }
