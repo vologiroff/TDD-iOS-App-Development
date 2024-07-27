@@ -328,6 +328,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		CB00189A2C557DAB0060C0C7 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				CB00188C2C51A1560060C0C7 /* ImageCommentsMapper.swift */,
+				CB00188E2C51A1720060C0C7 /* RemoteImageCommentsLoader.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		CB00189B2C557E140060C0C7 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				CB0018902C51A1920060C0C7 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		CB1C83C12AF06F0F00529E66 /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,10 +546,11 @@
 			children = (
 				CBD9AF5D2AD9FD9500ECCC91 /* ApplicationFeed.h */,
 				CBD9AF5E2AD9FD9500ECCC91 /* ApplicationFeed.docc */,
+				CB00189A2C557DAB0060C0C7 /* Image Comments API */,
 				CB0018922C54459D0060C0C7 /* Image Comments Feature */,
-				CBDD841B2ADA00A200E20A5B /* Feed Feature */,
 				CB0018972C557C280060C0C7 /* Shared API */,
 				CB0018952C557BDA0060C0C7 /* Shared API Infra */,
+				CBDD841B2ADA00A200E20A5B /* Feed Feature */,
 				CBDD84242ADA113900E20A5B /* FeedAPI */,
 				CB1C83C12AF06F0F00529E66 /* Feed Cache */,
 				CB6F29BA2B37A23D00C2C613 /* Feed Presentation */,
@@ -544,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB0E3DD2AE45F5C0064DBB1 /* Helpers */,
+				CB00189B2C557E140060C0C7 /* Image Comments API */,
 				CB0018982C557CD40060C0C7 /* Shared API */,
 				CB0018962C557C130060C0C7 /* Shared API Infra */,
 				CB7A73CF2AEED60F005B3C41 /* Feed Cache */,
@@ -573,8 +592,6 @@
 				CBDD842B2ADC5FA200E20A5B /* FeedItemsMapper.swift */,
 				CBACD5882AF3111000F7DA05 /* RemoteFeedItem.swift */,
 				CBC15EA72B45F6FA005FF3A3 /* RemoteFeedImageDataLoader.swift */,
-				CB00188C2C51A1560060C0C7 /* ImageCommentsMapper.swift */,
-				CB00188E2C51A1720060C0C7 /* RemoteImageCommentsLoader.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -584,7 +601,6 @@
 			children = (
 				CBDD84202ADA029000E20A5B /* LoadFeedFromRemoteUseCaseTests.swift */,
 				CBC15EA32B44CBBC005FF3A3 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				CB0018902C51A1920060C0C7 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
