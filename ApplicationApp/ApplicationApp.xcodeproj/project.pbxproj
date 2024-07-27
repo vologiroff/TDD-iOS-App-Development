@@ -177,11 +177,11 @@
 				CBFC28802C409362009A61AF /* AppDelegate.swift */,
 				CBFC28822C409362009A61AF /* SceneDelegate.swift */,
 				CBFC28842C409362009A61AF /* ViewController.swift */,
+				CBEFB8D02C4EE04B005A2193 /* CombineHelpers.swift */,
 				CBFC28862C409362009A61AF /* Main.storyboard */,
 				CBFC28892C409363009A61AF /* Assets.xcassets */,
 				CBFC288B2C409363009A61AF /* LaunchScreen.storyboard */,
 				CBFC288E2C409363009A61AF /* Info.plist */,
-				CBEFB8D02C4EE04B005A2193 /* CombineHelpers.swift */,
 			);
 			path = ApplicationApp;
 			sourceTree = "<group>";
