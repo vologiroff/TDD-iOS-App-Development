@@ -488,9 +488,9 @@
 		CBD9AF5C2AD9FD9500ECCC91 /* ApplicationFeed */ = {
 			isa = PBXGroup;
 			children = (
-				CB0018922C54459D0060C0C7 /* Image Comments Feature */,
 				CBD9AF5D2AD9FD9500ECCC91 /* ApplicationFeed.h */,
 				CBD9AF5E2AD9FD9500ECCC91 /* ApplicationFeed.docc */,
+				CB0018922C54459D0060C0C7 /* Image Comments Feature */,
 				CBDD841B2ADA00A200E20A5B /* Feed Feature */,
 				CBDD84242ADA113900E20A5B /* FeedAPI */,
 				CB1C83C12AF06F0F00529E66 /* Feed Cache */,
