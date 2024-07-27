@@ -1,11 +1,11 @@
 //
-//  RemoteImageCommentsLoader.swift
+//  RemoteLoader.swift
 //  ApplicationFeed
 //
-//  Created by Kantemir Vologirov on 24.7.24..
+//  Created by Kantemir Vologirov on 27.7.24..
 //
 
-public final class RemoteImageCommentsLoader {
+public final class RemoteLoader: FeedLoader {
     private let url: URL
     private let client: HTTPClient
 
@@ -14,7 +14,7 @@ public final class RemoteImageCommentsLoader {
         case invalidData
     }
 
-    public typealias Result = Swift.Result<[ImageComment], Swift.Error>
+    public typealias Result = FeedLoader.Result
 
     public init(url: URL, client: HTTPClient) {
         self.url = url
@@ -27,7 +27,7 @@ public final class RemoteImageCommentsLoader {
 
             switch result {
             case let .success((data, response)):
-                completion(RemoteImageCommentsLoader.map(data, from: response))
+                completion(RemoteLoader.map(data, from: response))
 
             case .failure:
                 completion(.failure(Error.connectivity))
@@ -37,10 +37,10 @@ public final class RemoteImageCommentsLoader {
 
     private static func map(_ data: Data, from response: HTTPURLResponse) -> Result {
         do {
-            let items = try ImageCommentsMapper.map(data, from: response)
+            let items = try FeedItemsMapper.map(data, from: response)
             return .success(items)
         } catch {
-            return .failure(error)
+            return .failure(Error.invalidData)
         }
     }
 }
