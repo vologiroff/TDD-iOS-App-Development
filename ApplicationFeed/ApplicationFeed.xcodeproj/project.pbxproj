@@ -64,6 +64,7 @@
 		CB84D3B62C4A6CB20003722B /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3B52C4A6CB20003722B /* UITableView+HeaderSizing.swift */; };
 		CB84D3B82C4A8C810003722B /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3B72C4A8C810003722B /* UIViewController+Snapshot.swift */; };
 		CB84D3BA2C4A8CD00003722B /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3B92C4A8CD00003722B /* XCTestCase+Snapshot.swift */; };
+		CBAA39C12C5C42DE00D8BF6C /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F29B12B378E7B00C2C613 /* FeedPresenterTests.swift */; };
 		CBACD58B2AF311EB00F7DA05 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACD58A2AF311EB00F7DA05 /* LocalFeedImage.swift */; };
 		CBB0E3DF2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0E3DE2AE45F860064DBB1 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CBB0E3E12AE47E830064DBB1 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0E3E02AE47E830064DBB1 /* URLSessionHTTPClient.swift */; };
@@ -1007,6 +1008,7 @@
 				CB7A73D12AEED632005B3C41 /* CacheFeedUseCaseTests.swift in Sources */,
 				CB7E97C92B098E2E00CF676B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				CB7E97C52B098A3900CF676B /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
+				CBAA39C12C5C42DE00D8BF6C /* FeedPresenterTests.swift in Sources */,
 				CBECEF1A2AF6F23A004DD5E9 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				CB0018912C51A1920060C0C7 /* ImageCommentsMapperTests.swift in Sources */,
 				CB7E97C12B091B8400CF676B /* FeedStoreSpecs.swift in Sources */,
