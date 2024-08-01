@@ -114,7 +114,8 @@ private class ImageStub: FeedImageCellControllerDelegate {
     init(description: String?, location: String?, image: UIImage?) {
         self.viewModel = FeedImageViewModel(
             description: description,
-            location: location)
+            location: location
+        )
         self.image = image
     }
     

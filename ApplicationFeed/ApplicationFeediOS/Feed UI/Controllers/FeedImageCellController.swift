@@ -48,8 +48,6 @@ public final class FeedImageCellController: ResourceView, ResourceLoadingView, R
         delegate.didCancelImageRequest()
     }
     
-    public func display(_ viewModel: FeedImageViewModel) {}
-    
     public func display(_ viewModel: UIImage) {
         cell?.feedImageView.setImageAnimated(viewModel)
     }
