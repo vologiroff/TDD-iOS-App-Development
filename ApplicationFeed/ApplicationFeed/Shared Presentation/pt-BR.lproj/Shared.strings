@@ -1,0 +1,9 @@
+/* 
+  Shared.strings
+  ApplicationFeed
+
+  Created by Kantemir Vologirov on 1.8.24..
+  
+*/
+
+"GENERIC_CONNECTION_ERROR" = "Não foi possível conectar com o servidor";
