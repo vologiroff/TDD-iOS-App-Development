@@ -35,6 +35,9 @@ public final class FeedImageCellController: ResourceView, ResourceLoadingView, R
         cell?.descriptionLabel.text = viewModel.description
         cell?.feedImageView.image = nil
         cell?.onRetry = delegate.didRequestImage
+        cell?.onReuse = { [weak self] in
+            self?.releaseCellForReuse()
+        }
         delegate.didRequestImage()
         return cell!
     }
