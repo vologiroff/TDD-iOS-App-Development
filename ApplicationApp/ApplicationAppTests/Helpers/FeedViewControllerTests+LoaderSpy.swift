@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests+LoaderSpy.swift
+//  ListViewControllerTests+LoaderSpy.swift
 //  ApplicationFeediOSTests
 //
 //  Created by Kantemir Vologirov on 29.11.23..

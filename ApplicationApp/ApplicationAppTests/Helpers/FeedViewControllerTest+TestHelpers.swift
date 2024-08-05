@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTest+TestHelpers.swift
+//  ListViewControllerTest+TestHelpers.swift
 //  ApplicationFeediOSTests
 //
 //  Created by Kantemir Vologirov on 29.11.23..
@@ -8,7 +8,7 @@
 import UIKit
 import ApplicationFeediOS
 
-extension FeedViewController {
+extension ListViewController {
     var errorMessage: String? {
         return errorView?.message
     }

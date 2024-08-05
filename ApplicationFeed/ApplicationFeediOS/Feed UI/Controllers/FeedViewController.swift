@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  ListViewController.swift
 //  ApplicationFeediOS
 //
 //  Created by Kantemir Vologirov on 25.11.23..
@@ -8,7 +8,7 @@
 import UIKit
 import ApplicationFeed
 
-public protocol FeedViewControllerDelegate {
+public protocol ListViewControllerDelegate {
     func didRequestFeedRefresh()
 }
 
@@ -18,14 +18,14 @@ public protocol CellController {
     func cancelLoad()
 }
 
-public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, ResourceLoadingView, ResourceErrorView {
+public final class ListViewController: UITableViewController, UITableViewDataSourcePrefetching, ResourceLoadingView, ResourceErrorView {
     @IBOutlet private(set) public var errorView: ErrorView?
     
     private var tableModel = [CellController]() {
         didSet { tableView.reloadData() }
     }
-    public var delegate: FeedViewControllerDelegate?
-    private var onViewIsAppearing: ((FeedViewController) -> Void)?
+    public var delegate: ListViewControllerDelegate?
+    private var onViewIsAppearing: ((ListViewController) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
