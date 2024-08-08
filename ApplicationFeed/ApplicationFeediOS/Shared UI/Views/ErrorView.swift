@@ -32,12 +32,13 @@ public final class ErrorView: UIButton {
         configureLabel()
         hideMessage()
     }
-
+    
     private func configureLabel() {
         titleLabel?.textColor = .white
         titleLabel?.textAlignment = .center
         titleLabel?.numberOfLines = 0
-        titleLabel?.font = .systemFont(ofSize: 17)
+        titleLabel?.font = .preferredFont(forTextStyle: .body)
+        titleLabel?.adjustsFontForContentSizeCategory = true
     }
     
     private var isVisible: Bool {
