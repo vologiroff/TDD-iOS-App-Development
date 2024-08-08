@@ -589,6 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6536192B11672B00BEC240 /* ListViewController.swift */,
+				CBAA3A002C6421E900D8BF6C /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -646,7 +647,6 @@
 			isa = PBXGroup;
 			children = (
 				CBAA39EB2C62B5B800D8BF6C /* ImageCommentCellController.swift */,
-				CBAA3A002C6421E900D8BF6C /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
