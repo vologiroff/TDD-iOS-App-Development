@@ -23,6 +23,9 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         super.viewDidLoad()
         
         configureTableView()
+        if #available(iOS 17.0, *) {
+            configureTraitCollectionObservers()
+        }
         
         onViewIsAppearing = { vc in
             vc.refresh()
@@ -36,16 +39,19 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         onViewIsAppearing?(self)
     }
     
+    @available(iOS 17.0, *)
+    private func configureTraitCollectionObservers() {
+        registerForTraitChanges(
+            [UITraitPreferredContentSizeCategory.self]
+        ) { (self: Self, previous: UITraitCollection) in
+            self.tableView.reloadData()
+        }
+    }
+    
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         tableView.sizeTableHeaderToFit()
-    }
-    
-    public override func traitCollectionDidChange(_ previous: UITraitCollection?) {
-        if previous?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
-            tableView.reloadData()
-        }
     }
     
     private func configureTableView() {
