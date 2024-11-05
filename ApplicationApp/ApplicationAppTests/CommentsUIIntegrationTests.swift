@@ -13,12 +13,12 @@ import ApplicationFeediOS
 
 class CommentsUIIntegrationTests: FeedUIIntegrationTests {
 
-    override func test_feedView_hasTitle() {
+    func test_commentsView_hasTitle() {
         let (sut, _) = makeSUT()
 
         sut.loadViewIfNeeded()
 
-        XCTAssertEqual(sut.title, feedTitle)
+        XCTAssertEqual(sut.title, commentsTitle)
     }
 
     override func test_loadFeedActions_requestFeedFromLoader() {
@@ -69,7 +69,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         assertThat(sut, isRendering: [image0, image1, image2, image3])
     }
 
-    override func test_loadFeedCompletion_rendersSuccessfullyLoadedEmptyFeedAfterNonEmptyFeed() {
+    func test_loadFeedCompletion_rendersSuccessfullyLoadedEmptyFeedAfterNonEmptyFeed() {
         let image0 = makeImage()
         let image1 = makeImage()
         let (sut, loader) = makeSUT()
@@ -121,7 +121,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         XCTAssertEqual(sut.errorMessage, nil)
     }
 
-    override func test_tapOnErrorView_hidesErrorMessage() {
+    func test_tapOnErrorView_hidesErrorMessage() {
         let (sut, loader) = makeSUT()
 
         sut.loadViewIfNeeded()
