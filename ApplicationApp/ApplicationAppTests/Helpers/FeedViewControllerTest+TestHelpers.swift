@@ -15,12 +15,12 @@ extension ListViewController {
         tableView.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
     }
     
-    var errorMessage: String? {
-        return errorView.message
-    }
-    
     var isShowingLoadingIndicator: Bool {
         return refreshControl?.isRefreshing == true
+    }
+
+    var errorMessage: String? {
+        return errorView.message
     }
     
     private var feedImagesSection: Int {
@@ -75,6 +75,10 @@ extension ListViewController {
         }
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
+    }
+    
+    func simulateErrorViewTap() {
+        errorView.simulateTap()
     }
     
     private func prepareForFirstAppearance() {
