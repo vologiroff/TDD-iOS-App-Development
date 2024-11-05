@@ -102,7 +102,7 @@ extension ListViewController {
         refreshControl = fake
     }
     
-    func simulateUserInitiatedFeedReload() {
+    func simulateUserInitiatedReload() {
         refreshControl?.simulatePullToRefresh()
     }
     
