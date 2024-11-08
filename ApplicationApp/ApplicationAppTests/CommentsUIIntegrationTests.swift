@@ -145,7 +145,7 @@ class CommentsUIIntegrationTests: XCTestCase {
                     }).eraseToAnyPublisher()
             })
             
-            sut?.loadViewIfNeeded()
+            sut?.simulateAppearance()
         }
         
         XCTAssertEqual(cancelCallCount, 0)
