@@ -15,8 +15,4 @@ public final class FeedPresenter {
             comment: "Title for the feed view"
         )
     }
-    
-    public static func map(_ feed: [FeedImage]) -> FeedViewModel {
-        FeedViewModel(feed: feed)
-    }
 }
