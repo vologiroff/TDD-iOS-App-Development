@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CB11C2BE2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2BC2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CB11C2C02C42FB560046AED1 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2BF2C42FB560046AED1 /* SharedTestHelpers.swift */; };
-		CB12887E2D0E2414007D6B7F /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12887D2D0E2414007D6B7F /* NullStore.swift */; };
 		CB7F80342CDA921C00D5E86B /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7F80332CDA921C00D5E86B /* CommentsUIComposer.swift */; };
 		CB7F80362CDA956100D5E86B /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7F80352CDA956100D5E86B /* CommentsUIIntegrationTests.swift */; };
 		CB84D34F2C4403AF0003722B /* ApplicationFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB84D34D2C4403AF0003722B /* ApplicationFeed.framework */; };
@@ -36,7 +35,6 @@
 		CB84D3A92C47DCEC0003722B /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3802C47D9D20003722B /* WeakRefVirtualProxy.swift */; };
 		CB84D3AB2C47E3800003722B /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3AA2C47E3800003722B /* FeedAcceptanceTests.swift */; };
 		CB84D3AD2C47EB950003722B /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3AC2C47EB950003722B /* HTTPClientStub.swift */; };
-		CB84D3AF2C47EBFD0003722B /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84D3AE2C47EBFD0003722B /* InMemoryFeedStore.swift */; };
 		CBEFB8D12C4EE04B005A2193 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFB8D02C4EE04B005A2193 /* CombineHelpers.swift */; };
 		CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28802C409362009A61AF /* AppDelegate.swift */; };
 		CBFC28832C409362009A61AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC28822C409362009A61AF /* SceneDelegate.swift */; };
@@ -74,7 +72,6 @@
 /* Begin PBXFileReference section */
 		CB11C2BC2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		CB11C2BF2C42FB560046AED1 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
-		CB12887D2D0E2414007D6B7F /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		CB7F80332CDA921C00D5E86B /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		CB7F80352CDA956100D5E86B /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		CB84D34D2C4403AF0003722B /* ApplicationFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +92,6 @@
 		CB84D3A22C47DA3E0003722B /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		CB84D3AA2C47E3800003722B /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		CB84D3AC2C47EB950003722B /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
-		CB84D3AE2C47EBFD0003722B /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		CBEFB8D02C4EE04B005A2193 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		CBFC287D2C409362009A61AF /* ApplicationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFC28802C409362009A61AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,7 +138,6 @@
 				CB11C2BC2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift */,
 				CB11C2BF2C42FB560046AED1 /* SharedTestHelpers.swift */,
 				CB84D3AC2C47EB950003722B /* HTTPClientStub.swift */,
-				CB84D3AE2C47EBFD0003722B /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -182,7 +177,6 @@
 				CBFC28892C409363009A61AF /* Assets.xcassets */,
 				CBFC288B2C409363009A61AF /* LaunchScreen.storyboard */,
 				CBFC288E2C409363009A61AF /* Info.plist */,
-				CB12887D2D0E2414007D6B7F /* NullStore.swift */,
 			);
 			path = ApplicationApp;
 			sourceTree = "<group>";
@@ -312,7 +306,6 @@
 			files = (
 				CBFC28852C409362009A61AF /* ViewController.swift in Sources */,
 				CBEFB8D12C4EE04B005A2193 /* CombineHelpers.swift in Sources */,
-				CB12887E2D0E2414007D6B7F /* NullStore.swift in Sources */,
 				CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */,
 				CB84D3892C47D9D20003722B /* FeedViewAdapter.swift in Sources */,
 				CB7F80342CDA921C00D5E86B /* CommentsUIComposer.swift in Sources */,
@@ -339,7 +332,6 @@
 				CB84D3A52C47DCBC0003722B /* LoadResourcePresentationAdapter.swift in Sources */,
 				CB84D39B2C47DA140003722B /* FeedViewControllerTests+LoaderSpy.swift in Sources */,
 				CB84D3A72C47DCCC0003722B /* FeedViewAdapter.swift in Sources */,
-				CB84D3AF2C47EBFD0003722B /* InMemoryFeedStore.swift in Sources */,
 				CB84D3952C47DA140003722B /* FeedViewControllerTest+Assertions.swift in Sources */,
 				CB84D3AD2C47EB950003722B /* HTTPClientStub.swift in Sources */,
 				CB84D39A2C47DA140003722B /* UIControl+TestHelpers.swift in Sources */,
