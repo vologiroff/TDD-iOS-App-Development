@@ -172,10 +172,10 @@ final class ApplicationFeedCacheIntegrationTests: XCTestCase {
     
     private func expect(_ sut: LocalFeedImageDataLoader, toLoad expectedData: Data, for url: URL, file: StaticString = #file, line: UInt = #line) {
         do {
-            let loadedData = try sut.loadImageData(from: url)
-            XCTAssertEqual(loadedData, expectedData, file: file, line: line)
+            let loadedFeed = try sut.load()
+            XCTAssertEqual(loadedFeed, expectedFeed, file: file, line: line)
         } catch {
-            XCTFail("Expected successful image data result, got \(error) instead", file: file, line: line)
+            XCTFail("Expected successful feed result, got \(error) instead", file: file, line: line)
         }
     }
     
