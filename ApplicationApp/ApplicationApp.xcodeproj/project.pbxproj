@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB11C2BE2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2BC2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CB11C2C02C42FB560046AED1 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11C2BF2C42FB560046AED1 /* SharedTestHelpers.swift */; };
+		CB12887E2D0E2414007D6B7F /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12887D2D0E2414007D6B7F /* NullStore.swift */; };
 		CB7F80342CDA921C00D5E86B /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7F80332CDA921C00D5E86B /* CommentsUIComposer.swift */; };
 		CB7F80362CDA956100D5E86B /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7F80352CDA956100D5E86B /* CommentsUIIntegrationTests.swift */; };
 		CB84D34F2C4403AF0003722B /* ApplicationFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB84D34D2C4403AF0003722B /* ApplicationFeed.framework */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		CB11C2BC2C42F0F90046AED1 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		CB11C2BF2C42FB560046AED1 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		CB12887D2D0E2414007D6B7F /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		CB7F80332CDA921C00D5E86B /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		CB7F80352CDA956100D5E86B /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		CB84D34D2C4403AF0003722B /* ApplicationFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				CBFC28892C409363009A61AF /* Assets.xcassets */,
 				CBFC288B2C409363009A61AF /* LaunchScreen.storyboard */,
 				CBFC288E2C409363009A61AF /* Info.plist */,
+				CB12887D2D0E2414007D6B7F /* NullStore.swift */,
 			);
 			path = ApplicationApp;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				CBFC28852C409362009A61AF /* ViewController.swift in Sources */,
 				CBEFB8D12C4EE04B005A2193 /* CombineHelpers.swift in Sources */,
+				CB12887E2D0E2414007D6B7F /* NullStore.swift in Sources */,
 				CBFC28812C409362009A61AF /* AppDelegate.swift in Sources */,
 				CB84D3892C47D9D20003722B /* FeedViewAdapter.swift in Sources */,
 				CB7F80342CDA921C00D5E86B /* CommentsUIComposer.swift in Sources */,
